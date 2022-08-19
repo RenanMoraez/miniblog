@@ -69,6 +69,7 @@
         top: 30px;
         list-style: none;
         left: -10px;
+        transition: .4s;
     }
     
     .links_list_mobile li{
