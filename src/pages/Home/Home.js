@@ -20,7 +20,7 @@ const Home = () => {
   }
   return (
     <div className={styles.home}>
-       <h4>Veja os nossos posts mais recentes</h4>
+       <h4>Veja os nossos posts mais recentes 😉</h4>
        <form onSubmit={handleSubmit} className={styles.search_form}>
         <input type="text" placeholder="O que tu quer já ?" onChange={(e) => setQuery(e.target.value)}/>
         <button className="btn">Pesquisar</button>

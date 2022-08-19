@@ -48,26 +48,14 @@
     border-bottom: 1px solid #ccc;
 }
 
-@media (max-width: 834px){
-    .post_row{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       width: 80%;
-       padding: 10px;
-       font-weight: bold;
-   }
-}
-
-
-
-@media (max-width: 600px){
-     .post_row{
+ @media (max-width: 600px){
+      .post_row{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 90%;
         padding: 10px;
         font-weight: bold;
+
     }
-}
+} 
