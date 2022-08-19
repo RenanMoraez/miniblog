@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     padding: .5em 2em;
-
 }
 
 .brand {
@@ -37,4 +36,23 @@
     transition: .5s;
     border-end-end-radius: 15px;
     border-top-left-radius: 15px;
+}
+
+.hamburger-react{
+    display: none;
+}
+
+
+@media (max-width: 600px){
+    .navbar {
+        height: 2em;
+    }
+    .links_list {
+        display: none;
+        list-style: none;
+    }
+
+    .links_list_column{
+        display: flex;
+    }
 }

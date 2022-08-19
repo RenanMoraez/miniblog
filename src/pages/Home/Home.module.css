@@ -32,3 +32,16 @@
     padding: 10px 25px;
 }
 
+@media (max-width: 600px){
+    .search_form{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    .search_form input {
+        margin-right: 10px;
+        width: 100%;
+    }
+    
+}
