@@ -1,0 +1,34 @@
+.post_container{
+    text-align: center;
+}
+
+.post_container h3{
+    margin-bottom: .2em;
+}
+
+.post_container img{
+    width: 50%;
+   
+}
+
+.post_container .body{
+    width: 60%;
+    margin: .4em auto;
+}
+
+.post_container .tags{
+    display: flex;
+    justify-content: center;
+}
+
+.tags p{
+    color: #fff;
+    background-color: #9598ac;
+    padding: 5px;
+    margin-right: .5em;
+    border-radius: 5px;
+}
+
+.tags span {
+    font-weight: bold;
+}
