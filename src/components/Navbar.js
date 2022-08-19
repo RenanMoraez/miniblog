@@ -1,6 +1,7 @@
 // nav
 import {NavLink} from "react-router-dom";
-
+import { useState } from "react";
+import {HiOutlineMenu, HiX} from "react-icons/hi"
 // hooks
 import { useAuthentication } from "../hooks/useAuthentication";
 import { useAuthValue } from "../context/AuthContext";
@@ -14,7 +15,7 @@ const Navbar = () => {
 
   const {user} = useAuthValue();
   const {logout} = useAuthentication();
-
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <nav className={styles.navbar}>
@@ -22,9 +23,8 @@ const Navbar = () => {
             Belém<span>Tech</span>
         </NavLink>
 
-        {/* fazer o efetio hamburguer aqui */}
 
-        <ul className={styles.links_list}>
+        <ul className={isOpen ? styles.links_list_mobile : styles.links_list}>
             <li><NavLink to="/" className={({isActive}) => (isActive ? styles.active: "")}>Home</NavLink></li>
             <li><NavLink to="/about" className={({isActive}) => (isActive ? styles.active: "")}>Sobre</NavLink></li>
             {!user && 
@@ -43,7 +43,9 @@ const Navbar = () => {
               </li>
             )}
          </ul>
-
+         <button className={styles.menu_icon} onClick={() => setIsOpen(!isOpen)}> 
+               {isOpen ? <HiX size={30}/> : <HiOutlineMenu size={30} /> }
+         </button>
     </nav>
   )
 }
